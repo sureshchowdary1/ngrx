@@ -5,7 +5,7 @@ let suresh = mongodb.MongoClient;
 
 const update = express.Router().put('/' , (req,res) => {
     // suresh.connect('mongodb://localhost:27017/angdb', (err,conn)=>{
-    suresh.connect('mongodb+srv://admin:admin@cluster.1qdeb.mongodb.net/angdb?retryWrites=true&w=majority', (err,conn)=>{
+    suresh.connect('mongodb+srv://admin:admin@miniprojects.1qdeb.mongodb.net/angdb?retryWrites=true&w=majority', (err,conn)=>{
         if(err) throw err;
         else{
             let db =conn.db('angdb')
